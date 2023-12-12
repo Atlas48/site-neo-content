@@ -1,11 +1,13 @@
-@import "extra.scss"
+@import "lib/extra.scss"
 @import url("all.css")
 
-.header
-	border-top: 1px solid black
-	border-bottom: 1px solid black
+:root
+	--linecol: black
 
-@media(prefers-color-sceme: dark)
+body
+	color: var(--linecol)
+
+@media(prefers-color-scheme: dark)
 	body
 		background: #1b1b1b
-		color: #fff
+		--linecol: #e4e4e4
